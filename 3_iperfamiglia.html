@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Iperfamiglia — La spesa di tutti i giorni</title>
+<style>
+  :root{--r1:#D8402E;--r2:#F08A1D;--gr:#4a8a3a;--ink:#26201c;--mut:#6b5f57;--bg:#fff7f2;--card:#fff;--line:#f0e2d8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Trebuchet MS",Segoe UI,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--r1)}
+  header{background:#fff;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:4px solid var(--r1)}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:44px;height:44px;border-radius:12px;background:var(--r1);display:grid;place-items:center;color:#fff;font-weight:800;font-size:20px}
+  .brand b{font-size:20px;color:var(--r1)}.brand span{display:block;font-size:12px;color:var(--mut)}
+  nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
+  .hero{background:linear-gradient(120deg,#F08A1D,#D8402E);color:#fff;padding:52px 5%}
+  .hero h1{margin:0 0 8px;font-size:32px}
+  .hero p{max-width:640px;opacity:.95;font-size:17px}
+  .wrap{max-width:1040px;margin:0 auto;padding:36px 5%}
+  h2{color:var(--r1);border-bottom:2px solid var(--line);padding-bottom:8px;margin-top:40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{margin:0 0 6px;color:var(--r2);font-size:16px}
+  .card p{margin:0;color:var(--mut);font-size:14px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+  th{background:#fdeede;color:var(--r1)}
+  .faq{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin-top:14px}
+  .faq dt{font-weight:700;color:var(--ink);margin-top:14px}
+  .faq dd{margin:4px 0 14px;color:var(--mut);font-size:14px}
+  footer{background:var(--r1);color:#fff;padding:28px 5%;margin-top:40px;font-size:14px}
+  footer b{color:#ffe0b0}
+  .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1040px;margin:0 auto}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">iF</div><div><b>Iperfamiglia</b><span>La spesa di tutti i giorni</span></div></div>
+  <nav><a href="#servizi">Servizi</a><a href="#orari">Orari</a><a href="#faq">Domande frequenti</a><a href="#contatti">Contatti</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Iperfamiglia</h1>
+  <p>La catena di supermercati vicino a te: 120 punti vendita e la spesa online con consegna a domicilio e ritiro in negozio. Il nostro assistente virtuale ti aiuta 24/7 su orari, disponibilità prodotti, ordini, resi e carta fedeltà.</p>
+</section>
+
+<div class="wrap">
+  <h2>Chi siamo</h2>
+  <p>Iperfamiglia è una catena della grande distribuzione con circa 120 punti vendita sul territorio e un servizio e-commerce con consegna a domicilio e ritiro in negozio. Vogliamo rendere la spesa semplice e veloce, sia in negozio sia online, con un'assistenza sempre disponibile.</p>
+
+  <h2 id="servizi">Servizi</h2>
+  <div class="grid">
+    <div class="card"><h3>Punti vendita</h3><p>120 negozi con reparti freschi, gastronomia e non-food. Verifica orari e disponibilità per il negozio più vicino.</p></div>
+    <div class="card"><h3>Spesa online</h3><p>Ordina dal sito, scegli consegna a domicilio o ritiro in negozio, prenota lo slot che preferisci.</p></div>
+    <div class="card"><h3>Resi e rimborsi</h3><p>Reso entro 30 giorni con lo scontrino. Apertura pratica di reso e rimborso assistita.</p></div>
+    <div class="card"><h3>Carta fedeltà</h3><p>Accumula punti a ogni spesa, controlla il saldo, richiedi la riemissione in caso di smarrimento.</p></div>
+  </div>
+
+  <h2 id="orari">Orari</h2>
+  <table>
+    <tr><th>Servizio</th><th>Orario</th></tr>
+    <tr><td>Punti vendita</td><td>Tutti i giorni 8:00 – 21:00 (alcuni negozi fino alle 22:00)</td></tr>
+    <tr><td>Assistenza clienti e-commerce</td><td>Lunedì–Sabato 8:00 – 20:00</td></tr>
+  </table>
+  <p style="color:var(--mut);font-size:14px">L'assistente virtuale risponde 24/7; fuori orario raccoglie la richiesta e programma il ricontatto.</p>
+
+  <h2 id="faq">Domande frequenti</h2>
+  <dl class="faq">
+    <dt>A che ora chiude il punto vendita in centro oggi?</dt>
+    <dd>I punti vendita sono aperti tutti i giorni 8:00–21:00; alcuni fino alle 22:00. L'orario del singolo negozio va verificato per indirizzo.</dd>
+    <dt>Dov'è il mio ordine online?</dt>
+    <dd>Serve il numero d'ordine (formato ORD seguito da cifre); con quello si verifica lo stato e la consegna prevista.</dd>
+    <dt>Come faccio un reso o chiedo un rimborso?</dt>
+    <dd>I resi si effettuano entro 30 giorni con lo scontrino. Viene aperta la pratica di reso/rimborso con l'indicazione delle modalità.</dd>
+    <dt>Ho perso la carta fedeltà, come recupero i punti?</dt>
+    <dd>I punti sono legati all'anagrafica: previa identificazione si verifica il saldo e si avvia la riemissione della carta.</dd>
+    <dt>Il prodotto X è disponibile?</dt>
+    <dd>Si verifica la disponibilità a magazzino o nel punto vendita indicato.</dd>
+    <dt>Come prenoto uno slot di consegna a domicilio?</dt>
+    <dd>Vengono proposti gli slot disponibili e si conferma la prenotazione con indirizzo e recapito.</dd>
+    <dt>Il volantino di questa settimana cosa contiene?</dt>
+    <dd>Su richiesta vengono riportate le promozioni principali della settimana in corso per l'area indicata.</dd>
+    <dt>Un prodotto acquistato è difettoso, cosa faccio?</dt>
+    <dd>Viene aperta una segnalazione con i dettagli e programmata la gestione, senza promettere l'esito.</dd>
+  </dl>
+</div>
+
+<footer id="contatti">
+  <div class="contact">
+    <div><b>Assistenza clienti</b><br>+39 011 3322 400<br>lun–sab 8–20 (assistente virtuale 24/7)</div>
+    <div><b>Spesa online</b><br>ordini@iperfamiglia.it</div>
+    <div><b>Sede</b><br>Via del Commercio 12, Torino</div>
+    <div><b>Carta fedeltà</b><br>fedelta@iperfamiglia.it</div>
+  </div>
+</footer>
+</body>
+</html>
