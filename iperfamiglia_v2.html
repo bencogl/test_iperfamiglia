@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iperfamiglia – Punti vendita, Sushi a domicilio, Catalogo premi e Promozioni</title>
+<meta name="description" content="Iperfamiglia: orari dei punti vendita di Bologna, Milano, Roma e Firenze, consegna a domicilio del banco sushi, catalogo premi carta fedeltà, promozioni elettrodomestici e raccolta bollini piatti fino al 15 novembre 2026.">
+<style>
+  :root{
+    --red:#C8281E; --red-dk:#8E1C15; --green:#1F5A3A; --tag:#F5C518;
+    --ink:#1D1D1B; --mut:#5A5750; --line:#E6E1D8; --paper:#FFFFFF; --soft:#FAF6EF;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Segoe UI","Avenir Next",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px}
+  a{color:var(--red-dk)}
+  a:focus-visible{outline:3px solid var(--tag);outline-offset:2px}
+  header{background:var(--red);color:#fff;position:sticky;top:0;z-index:5}
+  .bar{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+  .logo{width:42px;height:42px;border-radius:50%;background:#fff;color:var(--red);display:grid;place-items:center;font-weight:800;font-size:18px}
+  .brand b{font-size:20px;letter-spacing:-.3px}
+  nav{display:flex;flex-wrap:wrap;gap:4px}
+  nav a{color:#fff;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:6px}
+  nav a:hover{background:var(--red-dk)}
+  .hero{background:var(--red-dk);color:#fff}
+  .hero .in{max-width:1120px;margin:0 auto;padding:44px 20px 40px}
+  .hero h1{font-size:clamp(30px,5vw,48px);line-height:1.05;margin:0 0 12px;letter-spacing:-1px;max-width:18ch}
+  .hero p{max-width:62ch;margin:0;font-size:17px;opacity:.95}
+  .news{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .news a{background:var(--tag);color:var(--ink);text-decoration:none;font-weight:700;padding:8px 14px;border-radius:4px;font-size:14px}
+  main{max-width:1120px;margin:0 auto;padding:0 20px}
+  section{padding:44px 0 8px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:30px;margin:0 0 6px;letter-spacing:-.5px;color:var(--red-dk)}
+  h3{font-size:20px;margin:28px 0 8px;color:var(--green)}
+  .lead{color:var(--mut);max-width:70ch;margin:0 0 18px}
+  p{max-width:75ch}
+  .tbl{overflow-x:auto;margin:10px 0 18px;border:1px solid var(--line);border-radius:8px}
+  table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  th{background:var(--soft);color:var(--ink);font-weight:700}
+  td.num,th.num{text-align:right;white-space:nowrap}
+  .store{font-weight:700}
+  .addr{display:block;font-weight:400;color:var(--mut);font-size:13.5px}
+  .chip{display:inline-block;font-size:12px;font-weight:700;padding:2px 7px;border-radius:3px;margin:0 4px 3px 0;background:#E7F0EA;color:var(--green)}
+  .chip.s{background:#FDE8E6;color:var(--red-dk)}
+  .note{background:var(--soft);border-left:4px solid var(--green);padding:12px 16px;margin:14px 0;max-width:80ch;font-size:15px}
+  .note.warn{border-left-color:var(--red)}
+  .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  ul{padding-left:20px} li{margin:4px 0}
+  .old{text-decoration:line-through;color:var(--mut)}
+  .price{display:inline-block;background:var(--tag);color:var(--ink);font-weight:800;padding:2px 8px;border-radius:3px;white-space:nowrap}
+  .off{color:var(--red);font-weight:800}
+  .plates{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:8px 0 6px}
+  .plate{width:86px;height:86px;border-radius:50%;background:#fff;border:8px solid #EFE7DA;box-shadow:inset 0 0 0 3px var(--green);display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--green);text-align:center}
+  .plate.sm{width:64px;height:64px;border-width:6px}
+  dl.faq dt{font-weight:700;margin-top:16px}
+  dl.faq dd{margin:4px 0 0;color:var(--mut);max-width:75ch}
+  footer{background:var(--green);color:#fff;margin-top:40px}
+  footer .in{max-width:1120px;margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;font-size:14px}
+  footer b{color:var(--tag)}
+  .upd{font-size:13px;color:var(--mut);margin-top:6px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="#top"><span class="logo">iF</span><span><b>Iperfamiglia</b></span></a>
+    <nav aria-label="Sezioni">
+      <a href="#negozi">Punti vendita e orari</a>
+      <a href="#sushi">Sushi a domicilio</a>
+      <a href="#promo">Promozioni</a>
+      <a href="#bollini">Raccolta bollini</a>
+      <a href="#premi">Catalogo premi</a>
+      <a href="#faq">Domande frequenti</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="in">
+    <h1>La spesa di tutti i giorni, vicino a te</h1>
+    <p>Iperfamiglia è una catena di supermercati e ipermercati con circa 120 punti vendita in Italia e la spesa online con consegna a domicilio o ritiro in negozio. In questa pagina trovi gli orari dei negozi di Bologna, Milano, Roma e Firenze, il servizio di consegna del banco sushi, le promozioni sugli elettrodomestici, la raccolta bollini e il catalogo premi della carta fedeltà.</p>
+    <div class="news">
+      <a href="#bollini">Raccolta bollini piatti fino al 15 novembre</a>
+      <a href="#promo">Elettrodomestici scontati fino al 31 ottobre</a>
+      <a href="#sushi">Sushi a domicilio in 6 punti vendita</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ PUNTI VENDITA ============ -->
+<section id="negozi">
+  <h2>Punti vendita e orari</h2>
+  <p class="lead">I punti vendita sono aperti tutti i giorni dalle 8:00 alle 21:00; alcuni, come gli ipermercati, chiudono alle 22:00. La domenica alcuni negozi hanno un orario ridotto: controlla sempre quello del punto vendita dove vuoi andare. Gli ipermercati (oltre 2.000 mq) offrono anche Iperfamiglia Drive, il ritiro della spesa al parcheggio senza scendere dall'auto.</p>
+
+  <h3 id="bologna">Bologna</h3>
+  <div class="tbl"><table>
+    <tr><th>Punto vendita</th><th>Lunedì – Sabato</th><th>Domenica</th><th>Servizi</th></tr>
+    <tr><td class="store">Iperfamiglia Bologna Centro<span class="addr">Via Ugo Bassi 28, 40121 Bologna · Tel. 051 440 1120</span></td><td>8:00 – 21:00</td><td>8:00 – 20:00</td><td><span class="chip">Spesa online</span></td></tr>
+    <tr><td class="store">Iper Iperfamiglia Borgo Panigale<span class="addr">Via Emilia Ponente 214, 40133 Bologna · Tel. 051 440 1180</span></td><td>8:00 – 22:00</td><td>8:00 – 21:00</td><td><span class="chip">Drive</span><span class="chip s">Banco sushi + consegna</span><span class="chip">Parcheggio gratuito</span></td></tr>
+    <tr><td class="store">Iperfamiglia San Lazzaro<span class="addr">Via Emilia 150, 40068 San Lazzaro di Savena (BO) · Tel. 051 440 1195</span></td><td>8:00 – 21:00</td><td>8:00 – 13:00</td><td><span class="chip">Spesa online</span></td></tr>
+  </table></div>
+
+  <h3 id="milano">Milano</h3>
+  <div class="tbl"><table>
+    <tr><th>Punto vendita</th><th>Lunedì – Sabato</th><th>Domenica</th><th>Servizi</th></tr>
+    <tr><td class="store">Iperfamiglia Milano Porta Romana<span class="addr">Corso di Porta Romana 94, 20122 Milano · Tel. 02 8845 2210</span></td><td>8:00 – 22:00</td><td>8:00 – 22:00</td><td><span class="chip s">Banco sushi + consegna</span><span class="chip">Spesa online</span></td></tr>
+    <tr><td class="store">Iper Iperfamiglia Milano Bicocca<span class="addr">Viale Sarca 187, 20126 Milano · Tel. 02 8845 2260</span></td><td>8:00 – 22:00</td><td>8:00 – 21:00</td><td><span class="chip">Drive</span><span class="chip s">Banco sushi + consegna</span><span class="chip">Parcheggio gratuito</span></td></tr>
+    <tr><td class="store">Iperfamiglia Milano Città Studi<span class="addr">Via Pascoli 45, 20133 Milano · Tel. 02 8845 2290</span></td><td>8:00 – 21:00</td><td>8:00 – 13:00</td><td><span class="chip">Spesa online</span></td></tr>
+    <tr><td class="store">Iperfamiglia Express Milano Centrale<span class="addr">Via Vittor Pisani 16, 20124 Milano · Tel. 02 8845 2300</span></td><td>8:00 – 22:00</td><td>8:00 – 22:00</td><td>Formato express, solo casse automatiche</td></tr>
+  </table></div>
+
+  <h3 id="roma">Roma</h3>
+  <div class="tbl"><table>
+    <tr><th>Punto vendita</th><th>Lunedì – Sabato</th><th>Domenica</th><th>Servizi</th></tr>
+    <tr><td class="store">Iperfamiglia Roma Prati<span class="addr">Via Cola di Rienzo 212, 00192 Roma · Tel. 06 9921 3310</span></td><td>8:00 – 21:00</td><td>8:00 – 21:00</td><td><span class="chip s">Banco sushi + consegna</span><span class="chip">Spesa online</span></td></tr>
+    <tr><td class="store">Iperfamiglia Roma EUR<span class="addr">Viale Europa 110, 00144 Roma · Tel. 06 9921 3340</span></td><td>8:00 – 21:00</td><td>8:00 – 20:00</td><td><span class="chip">Spesa online</span></td></tr>
+    <tr><td class="store">Iper Iperfamiglia Roma Tiburtina<span class="addr">Via Tiburtina 1220, 00131 Roma · Tel. 06 9921 3380</span></td><td>8:00 – 22:00</td><td>8:00 – 21:00</td><td><span class="chip">Drive</span><span class="chip s">Banco sushi + consegna</span><span class="chip">Parcheggio gratuito</span></td></tr>
+  </table></div>
+
+  <h3 id="firenze">Firenze</h3>
+  <div class="tbl"><table>
+    <tr><th>Punto vendita</th><th>Lunedì – Sabato</th><th>Domenica</th><th>Servizi</th></tr>
+    <tr><td class="store">Iperfamiglia Firenze Centro Storico<span class="addr">Via dei Servi 30, 50122 Firenze · Tel. 055 773 4410</span></td><td>8:00 – 21:00</td><td>8:00 – 20:00</td><td>Zona ZTL, nessun parcheggio</td></tr>
+    <tr><td class="store">Iper Iperfamiglia Firenze Novoli<span class="addr">Viale Guidoni 60, 50127 Firenze · Tel. 055 773 4450</span></td><td>8:00 – 22:00</td><td>8:00 – 21:00</td><td><span class="chip">Drive</span><span class="chip s">Banco sushi + consegna</span><span class="chip">Parcheggio gratuito</span></td></tr>
+    <tr><td class="store">Iperfamiglia Firenze Gavinana<span class="addr">Viale Europa 95, 50126 Firenze · Tel. 055 773 4480</span></td><td>8:00 – 21:00</td><td>8:00 – 13:00</td><td><span class="chip">Spesa online</span></td></tr>
+  </table></div>
+
+  <h3 id="festivi">Orari nei giorni festivi</h3>
+  <p>Nei giorni festivi valgono questi orari, che sostituiscono quelli indicati sopra.</p>
+  <div class="tbl"><table>
+    <tr><th>Data</th><th>Festività</th><th>Dove</th><th>Orario</th></tr>
+    <tr><td>Domenica 4 ottobre 2026</td><td>San Petronio, patrono di Bologna</td><td>Negozi di Bologna e San Lazzaro</td><td>Bologna Centro e San Lazzaro 8:00 – 13:00; Borgo Panigale 8:00 – 20:00</td></tr>
+    <tr><td>Domenica 1 novembre 2026</td><td>Ognissanti</td><td>Tutti i punti vendita</td><td>Supermercati 8:00 – 13:00; Iper ed Express Milano Centrale 8:00 – 20:00</td></tr>
+    <tr><td>Lunedì 7 dicembre 2026</td><td>Sant'Ambrogio, patrono di Milano</td><td>Negozi di Milano</td><td>Orario della domenica</td></tr>
+    <tr><td>Martedì 8 dicembre 2026</td><td>Immacolata Concezione</td><td>Tutti i punti vendita</td><td>Orario della domenica</td></tr>
+    <tr><td>Giovedì 24 e 31 dicembre 2026</td><td>Vigilie</td><td>Tutti i punti vendita</td><td>Chiusura anticipata alle 19:00</td></tr>
+    <tr><td>Venerdì 25 dicembre 2026 e venerdì 1 gennaio 2027</td><td>Natale e Capodanno</td><td>Tutti i punti vendita</td><td>Chiuso</td></tr>
+  </table></div>
+</section>
+
+<!-- ============ SUSHI ============ -->
+<section id="sushi">
+  <h2>Sushi Iperfamiglia a domicilio</h2>
+  <p class="lead">Il sushi del nostro banco è preparato ogni giorno in negozio dai nostri sushi chef, dalle 10:30. Puoi riceverlo a casa ordinando dal sito o dall'app Iperfamiglia, con consegna effettuata dai nostri rider in borse termiche.</p>
+
+  <div class="two">
+    <div>
+      <h3>Dove è attivo</h3>
+      <ul>
+        <li>Iper Borgo Panigale (Bologna)</li>
+        <li>Milano Porta Romana</li>
+        <li>Iper Milano Bicocca</li>
+        <li>Roma Prati</li>
+        <li>Iper Roma Tiburtina</li>
+        <li>Iper Firenze Novoli</li>
+      </ul>
+      <p>Consegniamo entro 5 km dal punto vendita. Inserisci il tuo indirizzo nell'app per sapere quale negozio ti serve. Negli altri punti vendita il sushi non è disponibile.</p>
+    </div>
+    <div>
+      <h3>Orari di consegna</h3>
+      <div class="tbl"><table style="min-width:0">
+        <tr><th>Giorno</th><th>Pranzo</th><th>Cena</th></tr>
+        <tr><td>Lunedì – Giovedì</td><td>11:30 – 14:30</td><td>18:30 – 21:00</td></tr>
+        <tr><td>Venerdì e Sabato</td><td>11:30 – 14:30</td><td>18:30 – 21:00</td></tr>
+        <tr><td>Domenica</td><td>12:00 – 14:30</td><td>18:30 – 20:30</td></tr>
+      </table></div>
+      <p>Negli Iper e a Milano Porta Romana il venerdì e il sabato la consegna serale prosegue fino alle 21:30. L'ultimo ordine si accetta 30 minuti prima della fine della fascia.</p>
+    </div>
+  </div>
+
+  <h3>Costi e tempi</h3>
+  <div class="tbl"><table>
+    <tr><th>Voce</th><th>Dettaglio</th></tr>
+    <tr><td>Ordine minimo</td><td>20,00 €</td></tr>
+    <tr><td>Costo di consegna</td><td>2,90 €; gratuita per ordini da 35,00 € in su</td></tr>
+    <tr><td>Tempo di consegna</td><td>35 – 50 minuti dalla conferma. Puoi anche programmare l'orario fino a 3 ore prima</td></tr>
+    <tr><td>Pagamento</td><td>Solo online: carta di credito, carta di debito, PayPal o buoni pasto elettronici. Contanti non accettati</td></tr>
+    <tr><td>Carta fedeltà</td><td>1 punto ogni euro speso, accreditato sulla carta collegata all'account</td></tr>
+    <tr><td>Ordini per feste ed eventi</td><td>Oltre 100 pezzi: prenotazione con almeno 48 ore di anticipo chiamando il punto vendita</td></tr>
+  </table></div>
+
+  <h3>Il menu più richiesto</h3>
+  <div class="tbl"><table>
+    <tr><th>Prodotto</th><th>Pezzi</th><th class="num">Prezzo</th></tr>
+    <tr><td>Box Classico (nigiri, hosomaki, uramaki salmone)</td><td>16</td><td class="num">12,90 €</td></tr>
+    <tr><td>Box Salmone Lover</td><td>20</td><td class="num">15,90 €</td></tr>
+    <tr><td>Uramaki Crunchy gamberi in tempura</td><td>8</td><td class="num">7,50 €</td></tr>
+    <tr><td>Nigiri misto (salmone, tonno, branzino)</td><td>8</td><td class="num">8,90 €</td></tr>
+    <tr><td>Box Veggie (avocado, cetriolo, mango)</td><td>12</td><td class="num">9,90 €</td></tr>
+    <tr><td>Poke bowl salmone e edamame</td><td>1</td><td class="num">9,90 €</td></tr>
+    <tr><td>Box Famiglia</td><td>48</td><td class="num">34,90 €</td></tr>
+  </table></div>
+  <div class="note warn">Il sushi a domicilio si ordina separatamente dalla spesa online: non è possibile aggiungerlo a un ordine di spesa. Tutto il pesce destinato al consumo crudo viene abbattuto di temperatura come previsto dalla normativa. L'elenco degli allergeni è riportato nella scheda di ogni prodotto; per allergie gravi contatta il punto vendita prima di ordinare.</div>
+</section>
+
+<!-- ============ PROMOZIONI ============ -->
+<section id="promo">
+  <h2>Settimane dell'Elettrodomestico</h2>
+  <p class="lead">Dal 1 al 31 ottobre 2026, in tutti i punti vendita Iperfamiglia e sulla spesa online, gli stessi prezzi ovunque. Fino a esaurimento scorte.</p>
+  <div class="tbl"><table>
+    <tr><th>Prodotto</th><th class="num">Prezzo pieno</th><th class="num">Prezzo promo</th><th class="num">Sconto</th></tr>
+    <tr><td>Friggitrice ad aria digitale 5,5 L</td><td class="num"><span class="old">129,90 €</span></td><td class="num"><span class="price">79,90 €</span></td><td class="num off">-38%</td></tr>
+    <tr><td>Macchina da caffè a capsule con montalatte</td><td class="num"><span class="old">99,90 €</span></td><td class="num"><span class="price">59,90 €</span></td><td class="num off">-40%</td></tr>
+    <tr><td>Aspirapolvere senza fili 25,2 V, autonomia 40 minuti</td><td class="num"><span class="old">249,00 €</span></td><td class="num"><span class="price">169,00 €</span></td><td class="num off">-32%</td></tr>
+    <tr><td>Robot da cucina multifunzione 1000 W</td><td class="num"><span class="old">399,00 €</span></td><td class="num"><span class="price">299,00 €</span></td><td class="num off">-25%</td></tr>
+    <tr><td>Forno a microonde 25 L con grill</td><td class="num"><span class="old">139,00 €</span></td><td class="num"><span class="price">99,00 €</span></td><td class="num off">-29%</td></tr>
+    <tr><td>Ferro da stiro a vapore 2400 W</td><td class="num"><span class="old">69,90 €</span></td><td class="num"><span class="price">44,90 €</span></td><td class="num off">-36%</td></tr>
+    <tr><td>Asciugacapelli ionico 2200 W</td><td class="num"><span class="old">49,90 €</span></td><td class="num"><span class="price">29,90 €</span></td><td class="num off">-40%</td></tr>
+    <tr><td>Lavatrice 8 kg classe A, 1400 giri</td><td class="num"><span class="old">499,00 €</span></td><td class="num"><span class="price">379,00 €</span></td><td class="num off">-24%</td></tr>
+    <tr><td>Frigorifero combinato 349 L No Frost classe D</td><td class="num"><span class="old">649,00 €</span></td><td class="num"><span class="price">529,00 €</span></td><td class="num off">-18%</td></tr>
+  </table></div>
+  <div class="two">
+    <div>
+      <h3>Pagamento a rate</h3>
+      <p>Per acquisti da 199 € in su puoi pagare in 10 rate mensili a tasso zero (TAN 0%, TAEG 0%), salvo approvazione della società finanziaria. Serve un documento d'identità, il codice fiscale e l'IBAN.</p>
+    </div>
+    <div>
+      <h3>Grandi elettrodomestici</h3>
+      <p>Lavatrice e frigorifero sono esposti solo negli Iper (Borgo Panigale, Bicocca, Tiburtina, Novoli), ma si possono ordinare in tutti i punti vendita. Consegna al piano 29 €, gratuita per acquisti da 499 € in su. Ritiro gratuito dell'elettrodomestico usato (1 contro 1) al momento della consegna.</p>
+    </div>
+  </div>
+  <div class="note">Con la carta fedeltà ricevi 200 punti extra per ogni elettrodomestico in promozione. Garanzia legale di 2 anni su tutti i prodotti.</div>
+</section>
+
+<!-- ============ BOLLINI ============ -->
+<section id="bollini">
+  <h2>Raccolta bollini: collezione piatti Tavola d'Autunno</h2>
+  <p class="lead">Porcellana bianca con bordo verde salvia, adatta a lavastoviglie e microonde. La raccolta è temporanea e dura dal 1 ottobre al 15 novembre 2026.</p>
+  <div class="plates" aria-hidden="true">
+    <div class="plate">Piano<br>27 cm</div><div class="plate">Fondo<br>22 cm</div><div class="plate sm">Dessert</div>
+  </div>
+
+  <h3>Come funziona</h3>
+  <ul>
+    <li>Ricevi 1 bollino ogni 15 € di spesa su scontrino unico (per esempio 45 € danno 3 bollini).</li>
+    <li>Ricevi 1 bollino extra per ogni prodotto sponsor segnalato a scaffale con il cartellino verde.</li>
+    <li>Con la spesa online i bollini sono digitali e vengono caricati automaticamente sulla carta fedeltà.</li>
+    <li>I bollini cartacei si attaccano sulla scheda raccolta, disponibile alle casse.</li>
+    <li>Ultimo giorno per raccogliere i bollini: domenica 15 novembre 2026. Ultimo giorno per ritirare i premi: domenica 29 novembre 2026.</li>
+  </ul>
+
+  <h3>I premi della collezione</h3>
+  <div class="tbl"><table>
+    <tr><th>Pezzo</th><th>Solo bollini</th><th>Bollini + contributo</th></tr>
+    <tr><td>Piatto piano Ø 27 cm</td><td>20 bollini</td><td>10 bollini + 3,90 €</td></tr>
+    <tr><td>Piatto fondo Ø 22 cm</td><td>20 bollini</td><td>10 bollini + 3,90 €</td></tr>
+    <tr><td>Piatto dessert Ø 20 cm</td><td>16 bollini</td><td>8 bollini + 2,90 €</td></tr>
+    <tr><td>Tazza colazione con piattino</td><td>16 bollini</td><td>8 bollini + 2,90 €</td></tr>
+    <tr><td>Piatto da portata ovale 36 cm</td><td>30 bollini</td><td>15 bollini + 6,90 €</td></tr>
+    <tr><td>Set completo 18 pezzi (6 piani, 6 fondi, 6 dessert)</td><td>Non disponibile</td><td>60 bollini + 29,90 €</td></tr>
+  </table></div>
+  <div class="note">Se il pezzo che vuoi è esaurito, lo prenoti al box informazioni e lo ricevi in negozio entro 30 giorni, anche dopo il 29 novembre. I bollini non si convertono in denaro e non si possono usare per il catalogo premi della carta fedeltà.</div>
+</section>
+
+<!-- ============ PREMI ============ -->
+<section id="premi">
+  <h2>Catalogo premi carta fedeltà</h2>
+  <p class="lead">Con la carta fedeltà Iperfamiglia accumuli 1 punto per ogni euro di spesa, in negozio e online. I punti di questa edizione si raccolgono fino al 31 gennaio 2027 e i premi si richiedono entro il 28 febbraio 2027.</p>
+  <div class="note">Iniziativa in corso: raccolta punti "Autunno d'Oro", punti tripli su tutti i prodotti a marchio Iperfamiglia fino al 15 ottobre 2026.</div>
+
+  <div class="tbl"><table>
+    <tr><th>Codice</th><th>Premio</th><th>Categoria</th><th class="num">Solo punti</th><th class="num">Punti + contributo</th></tr>
+    <tr><td>P01</td><td>Buono spesa 5 €</td><td>Buoni</td><td class="num">500</td><td class="num">–</td></tr>
+    <tr><td>P02</td><td>Buono spesa 15 €</td><td>Buoni</td><td class="num">1.300</td><td class="num">–</td></tr>
+    <tr><td>P03</td><td>Buono spesa 30 €</td><td>Buoni</td><td class="num">2.500</td><td class="num">–</td></tr>
+    <tr><td>P04</td><td>Box Classico sushi 16 pezzi (ritiro al banco)</td><td>Buoni</td><td class="num">600</td><td class="num">–</td></tr>
+    <tr><td>P05</td><td>Set 3 canovacci in cotone</td><td>Casa</td><td class="num">350</td><td class="num">150 + 2,00 €</td></tr>
+    <tr><td>P06</td><td>Plaid in pile 130 × 170 cm</td><td>Casa</td><td class="num">700</td><td class="num">300 + 4,00 €</td></tr>
+    <tr><td>P07</td><td>Borsa frigo 20 L</td><td>Tempo libero</td><td class="num">900</td><td class="num">400 + 5,00 €</td></tr>
+    <tr><td>P08</td><td>Frullatore a immersione 600 W</td><td>Cucina</td><td class="num">1.600</td><td class="num">800 + 10,00 €</td></tr>
+    <tr><td>P09</td><td>Tostapane 2 fette</td><td>Cucina</td><td class="num">1.800</td><td class="num">900 + 12,00 €</td></tr>
+    <tr><td>P10</td><td>Set 5 coltelli con ceppo</td><td>Cucina</td><td class="num">2.200</td><td class="num">1.100 + 15,00 €</td></tr>
+    <tr><td>P11</td><td>Due ingressi al cinema</td><td>Tempo libero</td><td class="num">1.200</td><td class="num">–</td></tr>
+    <tr><td>P12</td><td>Trolley da cabina 55 cm</td><td>Tempo libero</td><td class="num">3.500</td><td class="num">1.800 + 25,00 €</td></tr>
+    <tr><td>P13</td><td>Donazione di 5 € a un banco alimentare locale</td><td>Solidarietà</td><td class="num">400</td><td class="num">–</td></tr>
+  </table></div>
+  <p>I premi si richiedono al box informazioni di qualunque punto vendita o dall'app. Se il premio non è disponibile in negozio arriva entro 10 giorni lavorativi. I buoni spesa si usano entro 60 giorni e su una spesa minima pari al doppio del valore del buono.</p>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <h2>Domande frequenti</h2>
+  <dl class="faq">
+    <dt>A che ora chiude il punto vendita in centro oggi?</dt>
+    <dd>I punti vendita sono aperti tutti i giorni dalle 8:00 alle 21:00; gli Iper, Milano Porta Romana ed Express Milano Centrale chiudono alle 22:00. La domenica alcuni negozi hanno orario ridotto: l'orario va verificato per indirizzo.</dd>
+    <dt>Quali negozi la domenica sono aperti solo la mattina?</dt>
+    <dd>San Lazzaro di Savena (Bologna), Milano Città Studi e Firenze Gavinana, aperti la domenica dalle 8:00 alle 13:00. Tutti gli altri restano aperti anche il pomeriggio.</dd>
+    <dt>Dov'è il mio ordine online?</dt>
+    <dd>Serve il numero d'ordine (formato ORD seguito da cifre); con quello si verifica lo stato e la consegna prevista.</dd>
+    <dt>Quanto costa la consegna della spesa a domicilio?</dt>
+    <dd>La consegna della spesa online è gratuita per ordini superiori a 80 euro, altrimenti costa 4,90 euro. La consegna del sushi ha condizioni diverse: 2,90 euro, gratuita da 35 euro.</dd>
+    <dt>Posso ritirare la spesa in auto?</dt>
+    <dd>Sì, con Iperfamiglia Drive negli Iper di Borgo Panigale, Milano Bicocca, Roma Tiburtina e Firenze Novoli.</dd>
+    <dt>Come faccio un reso o chiedo un rimborso?</dt>
+    <dd>I resi si effettuano entro 30 giorni con lo scontrino. Viene aperta la pratica di reso o rimborso con l'indicazione delle modalità. Per gli elettrodomestici vale anche la garanzia legale di 2 anni.</dd>
+    <dt>Ho perso la carta fedeltà, come recupero i punti?</dt>
+    <dd>I punti sono legati all'anagrafica: previa identificazione si verifica il saldo e si avvia la riemissione della carta. I bollini digitali della raccolta piatti vengono trasferiti sulla nuova carta.</dd>
+    <dt>Posso usare i punti della carta per i piatti della raccolta bollini?</dt>
+    <dd>No, sono due iniziative separate. I piatti si ottengono solo con i bollini, raccolti fino al 15 novembre 2026.</dd>
+  </dl>
+  <p class="upd">Pagina aggiornata il 30 settembre 2026.</p>
+</section>
+
+</main>
+
+<footer id="contatti">
+  <div class="in">
+    <div><b>Assistenza clienti</b><br>+39 011 3322 400<br>lunedì – sabato 8:00 – 20:00 (assistente virtuale 24/7)</div>
+    <div><b>Spesa online</b><br>ordini@iperfamiglia.it</div>
+    <div><b>Sushi a domicilio</b><br>sushi@iperfamiglia.it<br>oppure il telefono del punto vendita</div>
+    <div><b>Carta fedeltà e premi</b><br>fedelta@iperfamiglia.it</div>
+    <div><b>Sede</b><br>Via del Commercio 12, Torino</div>
+  </div>
+</footer>
+</body>
+</html>
